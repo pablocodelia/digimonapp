@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/img/Digimon_Logo.webp">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Digidex</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container">
+              <a href="#" class="navbar-brand"><img src="./assets/img/Digimon_Logo.webp" width="200" height="100"></a>
+              <form class="d-flex" role="search" id="buscador">
+                <input id="digimon" class="form-control me-2" type="text" placeholder="Ingresa el nombre de un Digimon" autocomplete="off">
+                <button id="buscar" class="btn btn-outline-success btn-dark" type="button">Buscar</button>
+              </form>
+            </div>
+          </nav>
+    </header>
+    <main class ='p-5'>
+
+<!-- imagen, nombre y nivel del digimon -->
+
+        <div id="informacion" class="container col-lg-5">
+            <div id="nombre" class="container">
+                <h1>Nombre del Digimon</h1>
+                
+            </div>
+            <div id="textoImagen" class="container">
+                <img id="imagen" src="" alt="">
+            </div>
+            <div id="nivel" class="container">
+                <h2>Nivel del Digimon</h2>
+            </div>
+        </div>
+
+<!-- tabla de digimons -->
+        <div class= 'container col-lg-7' id="tablaDiv">
+            <div class='row'>
+                
+                <div class="table-responsive" >
+                    <table id="tabla" class="table table-striped table-hover table-dark table-bordered border-dark table-responsive">
+                        <h2>Lista de digimons</h2>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th>Nivel</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody id="lista"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+            
+    </main>
+
+    <footer>
+        <p id="creditos">Creado por Pablo Codelia</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
